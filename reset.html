@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />      <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/udfcss.css" />                                         <!--Let browser know website-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />                                <!--is optimized for mobile-->
+        <title>insthink</title>
+    </head>
+
+    <body class="ud_body_signup"> <!-- style="overflow: hidden;" -->
+    <!--header: start here-->
+    <header class="ud_header_signup">
+        <!-- navigation -->
+        <!-- <div class="primary-overlay">   
+        <div class="navbar-fixed"> -->
+          <nav class="ud_nav">
+            <div class="container">
+              <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"> <!--go to home when you click the logo-->
+                  <img class="ud_logo responsive-img" src="img/insthink_logo_b.png" alt="" style="width: 160px; height: 50px; padding-top: 20px;">
+                </a>
+              <a href="#" data-activates="mobile-nav" class="button-collapse white-text"> 
+                <i class="fa fa-bars"></i>
+              </a>  
+              <ul class="right hide-on-med-and-down">
+              <li><a href="signup.html" class="white-text"> SIGN UP </a></li>
+              <li><a href="#ud_login_modal" class="btn white teal-text waves-effect waves-teal modal-trigger"> Log In </a></li>
+              </ul>
+    
+              <ul class="side-nav" id="mobile-nav">
+                <li>
+                  <a href="signup.html" class="btn teal white-text waves-effect waves-teal modal-trigger">SIGN UP</a>
+                </li>
+                <li>
+                  <a href="login.html" class="btn teal white-text waves-effect waves-teal modal-trigger">LOG IN</a>
+                </li>
+              </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- </div>
+        </div> -->
+
+        <div class="ud_signup_card">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel z-depth-5">
+                            <h4> Welcome Back! </h4>
+                            <form action="">
+                                <div class="input-field">
+                                    <input type="text" id="acode">
+                                    <label for="acode"> Enter Your Auto Generated Code </label>
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" id="npassword" minlength="8">
+                                    <label for="npassword"> Enter Your New Password </label>
+                                </div>
+
+                                <div>
+                                <a href="success.html" class="btn teal waves-effect waves-light"> Reset Password </a>
+                                </div>
+                                <div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  <!-- log in modal -->
+  <div id="ud_login_modal" class="modal">
+    <div class="modal-content">
+      <h4>Account Login</h4>
+      <form class="" action="">
+        <div class="input-field">
+          <input type="text" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="password">
+          <label for="password">Password</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+            <a href="forgot.html" class="red-text"> Forgot Password?
+            <a href="home.html" class="btn teal white-text waves-effect waves-light center"> LOG IN ACCOUNT </a>
+    </div>
+  </div>
+
+
+
+  <!--------------------------------------------------------------------------------------------------------------------------------->
+  <!--import JQuery functions-->                                            <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>                
+  <!--import Materialize functions-->                                       <script type="text/javascript" src="js/materialize.min.js"></script>                                                     
+  <!--import JQuery functions-->                                            <script src="js/chart.js"></script>
+  <!--import remote function canvasjs.com  -->                              <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <!--------------------------------------------------------------------------------------------------------------------------------->
+  <!-- script start here -->
+  <script>
+    $('.button-collapse').sideNav();
+    $('.modal').modal();  
+  </script>
+
+
+
+  </body>
+</html>
+
